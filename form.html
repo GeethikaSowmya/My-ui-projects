@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: lightgoldenrodyellow">
+    <h1>Student Registration Form</h1>
+    <form action="submit.html" style="background-color: pink">
+      <table align="center">
+        <tr>
+          <td class="label">*Roll no:</td>
+          <td><input type="text" class="input" required /></td>
+        </tr>
+        <tr>
+          <td class="label">*Student name:</td>
+          <td>
+            <input type="text" placeholder="First Name" required /> -
+            <input type="text" placeholder="Last Name" />
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Father's name:</td>
+          <td><input type="text" class="input" /></td>
+        </tr>
+        <tr>
+          <td class="label">Date of birth:</td>
+          <td class="input">
+            <select>
+              <option disabled selected>Day</option>
+              <option>1</option>
+              <option>2</option>
+            </select>
+            -
+            <select>
+              <option disabled selected>Month</option>
+              <option>Jan</option>
+              <option>Feb</option>
+            </select>
+            -
+            <select>
+              <option disabled selected>Year</option>
+              <option>2023</option>
+              <option>2024</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Mobile no:</td>
+          <td><input type="text" class="input" /></td>
+        </tr>
+        <tr>
+          <td class="label">Email:</td>
+          <td><input type="email" class="input" /></td>
+        </tr>
+        <tr>
+          <td class="label">Password:</td>
+          <td><input type="password" class="input" /></td>
+        </tr>
+        <tr>
+          <td class="label">Gender:</td>
+          <td class="input">
+            <input type="radio" name="Gender" value="Male" /> Male
+            <input type="radio" name="Gender" value="Female" /> Female
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Department:</td>
+          <td class="input">
+            <input type="checkbox" value="CSE" /> CSE
+            <input type="checkbox" value="IT" /> IT
+            <input type="checkbox" value="ECE" /> ECE
+            <input type="checkbox" value="CIVIL" /> CIVIL
+            <input type="checkbox" value="MECH" /> MECH
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Courses:</td>
+          <td class="input">
+            <select>
+              <option disabled selected>
+                ------Select current course------
+              </option>
+              <option>B.Tech</option>
+              <option>M.Tech</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Student photo:</td>
+          <td class="input"><input type="file" /></td>
+        </tr>
+        <tr>
+          <td class="label">City:</td>
+          <td><input type="text" class="input" /></td>
+        </tr>
+        <tr>
+          <td class="label">Address:</td>
+          <td><textarea></textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" id="reg" style="text-align: center">
+            <input type="submit" value="Register" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
